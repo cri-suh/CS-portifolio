@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --verde: #0DF60E;
+    --branco: #fff;
+    --background-black: #0000007b;
+    --cinza: #ffffff80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; 
+    background-color: #000;
+  }
+
+.menu-desktop ul{
+    display: flex;
+    gap: 40px;
+}
+
+.menu-lista li{
+    list-style: none;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--cinza);
+    transition: .4s ease-in-out;
+}
+
+.menu-lista a:hover {
+    color: var(--branco);
+    font-size: 22px;
+    
+}
+
+.btn-contato {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 0 8px var(--verde);
+}
+
+.btn-contato:hover {
+    box-shadow: 0 0 30px 8px var(--verde);
+    color: var(--branco);
+}
+
+/* video backgound */
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+/* topo do site */
+
+.topo-do-site {
+   padding: 40px 4%;
+   margin-top: 80px;
+
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo-topo {
+    font-size: 40px;
+}
+
+.titulo-topo strong {
+    color: var(--verde);
+
+}
+
+.txt-topo-site {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.paragrafo-topo {
+    font-size: 18px;
+    color: var(--cinza);
+}
+
+.foto-perfil img {
+    border-radius: 50%;
+    border: 3px solid #0df60d;
+    box-shadow: 0 0 20px #0DF60E;
+}
+
+.redes {
+    display: flex;
+    align-self: self-start;
+    gap: 20px;
+    
+}
+
+.redes-img {
+    border-radius: 50%;
+    transition: .3s
+}
+
+.redes-img:hover {
+    transform: scale(1.09);
+    box-shadow: 0 0 8px var(--branco);
+}
+
+.foto-perfil img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* sobre mim */
+
+.sobre {
+    padding: 40px 2%;
+}
+
+.sobre-titulo {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.sobre-paragrafo {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: var(--background-black);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sobre-paragrafo strong {
+    color: var(--verde)
+}
+
+/* formação */
+
+.formacao {
+    padding: 40px 4%;
+}
+
+.formacao-titulo {
+    text-align: center;
+    font-size: 34px;
+    border-bottom: 1px solid var(--verde);
+
+}
+
+.formacao-card {
+    margin-top: 20px;
+    background-color: var(--background-black);
+    width: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.formacao-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--verde);
+}
+
+.formacao-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.formacao-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.formacao-card h3 {
+    font-size: 17px;
+}
+
+.formacao-card p {
+    color: var(--cinza);
+}
+
+/* Projetos */
+
+.projetos-tiluto{
+    text-align: center;
+    font-size: 34px;
+    background-color: var(--verde);
+    text-shadow: 1px 2px 4px #000;
+    padding: 8px 0;
+}
+
+.projeto-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+.projeto-cards {
+    background-color: var(--background-black);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.projeto-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--verde);
+}
+
+.img-cards {
+    width: 350px;
+}
+
+.descricao-titulo {
+    font-size: 17px;
+}
+
+.descricao p {
+    color: var(--cinza);
+}
+
+.projeto-btn {
+    margin: 10px 0;
+}
+
+.btn-link {
+    background-color: var(--verde);
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+    transition: .3s;
+    
+}
+
+.btn-link:hover{
+    box-shadow: 0 0 8px var(--verde);
+    color: var(--branco);
+}
+
+/* Contatos */
+
+.contato {
+    padding: 80px 4%;
+    
+}
+
+.contato-titulo {
+    text-align: center;
+    font-size: 34px;
+    border-bottom: 1px solid var(--verde);
+    
+}
+
+.contato-paragrafo {
+    text-align: center;
+    color: var(--cinza)
+}
+
+.formulario-contato {
+    background-color: var(--background-black);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.formulario-contato input {
+    width: 100%;
+    height: 47px;
+    padding: 20px;
+    border-radius: 10px;
+    outline-color: var(--verde);
+    border: none;
+}
+
+textarea {
+    height: 80px;
+    border-radius: 10px;
+    outline-color: var(--verde);
+    border: none;
+    padding: 7px 20px;
+}
+
+.form-btn {
+    width: 50%;
+    height: 47px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 0 8px var(--verde);
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 30px 8px var(--verde);
+    color: var(--branco);
+}
+
+
+/* rodapé */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    
+}
+
+.logo-rodape {
+    margin: 30px 0;
+    border-bottom: 2px solid var(--verde);
+    
+}
+
+.logo-email img {
+    border-radius: 50%;
+}
+
+.logo-email a{
+    margin-left:10px;
+    text-decoration: none;
+    color: var(--branco);
+    transition: .3s;
+}
+
+.logo-email a:hover {
+    color: var(--verde);
+}
+
+.container-rodape {
+    display: flex;
+    justify-content: space-between;  
+}
+
+@media (max-width: 768px) {
+
+    /* header */
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-contato {
+        display: none;
+    }
+
+    /* topo do site */
+    .interface {
+        flex-direction: column;
+        
+    }
+
+    .titulo-topo {
+        font-size: 30px;
+      
+    }
+    
+    .foto-perfil {
+        order: -1;
+        padding-bottom: 20px;
+    }
+
+    .foto-perfil img {
+        width: 200px;
+    }
+
+    /* sobre mim */
+    .sobre-titulo {
+        font-size: 28px;
+    }
+
+    /* formações */
+    .formacao-titulo {
+        font-size: 28px;
+    }
+
+    .formacao-card {
+        width: 220px;
+    }
+
+    .formacao-card img {
+        width: 100px;
+    }
+
+    /* projetos */
+
+    .projetos-tiluto {
+        font-size: 28px;
+    }
+
+    /* contato */
+    .contato-titulo {
+        font-size: 28px;
+    }
+
+    
+}
+
+
+
+
+
+
+
