@@ -470,8 +470,7 @@ footer {
     }
 
     /* projetos */
-    .projeto-container {
-        align-items: center;
+    .projeto-cards {
         width: 80vw;
     }
 
