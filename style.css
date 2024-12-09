@@ -424,6 +424,9 @@ footer {
     }
 
     /* topo do site */
+    .txt-topo-site {
+        width: 90vw; 
+    }
     .interface {
         flex-direction: column;
         
@@ -462,6 +465,10 @@ footer {
     }
 
     /* projetos */
+
+    .prjetos {
+        width: 90vw;
+    }
 
     .projetos-tiluto {
         font-size: 28px;
