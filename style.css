@@ -430,6 +430,7 @@ footer {
     .interface {
         flex-direction: column;
         
+        
     }
 
     .titulo-topo {
@@ -467,7 +468,7 @@ footer {
     /* projetos */
 
     .prjetos {
-        width: 90vw;
+        width: 80vw;
     }
 
     .projetos-tiluto {
