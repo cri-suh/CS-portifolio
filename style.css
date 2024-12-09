@@ -242,6 +242,10 @@ header {
 
 /* Projetos */
 
+.projetos {
+    width: 100vw;
+}
+
 .projetos-tiluto{
     text-align: center;
     font-size: 34px;
