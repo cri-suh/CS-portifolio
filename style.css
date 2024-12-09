@@ -456,6 +456,10 @@ footer {
         font-size: 28px;
     }
 
+    .sobre-paragrafo {
+        width: 90%;
+    }
+
     /* formações */
     .formacao-titulo {
         font-size: 28px;
