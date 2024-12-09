@@ -467,8 +467,12 @@ footer {
 
     /* projetos */
 
-    .prjetos {
-        width: 80vw;
+    .projetos {
+        width: 90vw;
+    }
+
+    .projeto-container {
+        align-items: center;
     }
 
     .projetos-tiluto {
