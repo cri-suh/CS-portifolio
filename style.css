@@ -62,8 +62,7 @@ header {
 
 .menu-lista a:hover {
     color: var(--branco);
-    font-size: 22px;
-    
+    font-size: 22px;  
 }
 
 .btn-contato {
@@ -424,10 +423,21 @@ footer {
 
     /* header */
     header {
-        padding: 0 20px;
-      }
+        justify-content: space-around;
+        
+    }
     
-      .menu-lista {
+    .logo img {
+        width: 150px;
+    }
+
+    .menu-desktop ul {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    
+    .menu-lista {
         position: absolute;
         top: 100%; 
         right: 0;
@@ -438,32 +448,48 @@ footer {
         transition: all 0.3s ease-in-out;
         opacity: 0;
         transform: translateY(-10px); 
-        flex-direction: column;
-        align-items: center;
-      }
+        
+    }
     
-      nav.active .menu-lista {
+    .menu-lista a {
+        font-size: 16px;
+        
+    }
+
+    .menu-lista a:hover {
+        color: var(--branco);
+        font-size: 18px;  
+    }
+    
+    nav.active .menu-lista {
         opacity: 1;
         transform: translateY(0);
-      }
+    }
     
-      .menu-lista li {
+    .menu-lista li {
         display: block;
         margin-bottom: 15px;
-      }
+    }
     
-      .menu-mobile {
+    .menu-mobile {
         display: block;
         cursor: pointer;
-      }
+    }
     
-      .menu-mobile i {
+    .menu-mobile i {
         color: var(--verde);
-        font-size: 35px;
-      }
+        font-size: 30px;
+    }
 
     .btn-contato {
-        display: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        position: fixed;
+        bottom: 60px;
+        right: 30px;
+        
+        
     }
 
     /* topo do site */
