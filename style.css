@@ -32,7 +32,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px 2%;
+    padding: 5px 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +101,7 @@ header {
 /* topo do site */
 
 .topo-do-site {
-   padding: 40px 4%;
+   padding: 80px 4%;
    margin-top: 80px;
 
 }
@@ -486,7 +486,7 @@ footer {
         font-size: 14px;
         font-weight: 600;
         position: fixed;
-        bottom: 60px;
+        bottom: 58px;
         right: 30px;
         
         
